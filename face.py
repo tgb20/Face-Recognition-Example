@@ -15,14 +15,20 @@ jacob_image = face_recognition.load_image_file("faces/Jacob.jpg")
 # Encode the image for face_recognition
 jacob_encoding = face_recognition.face_encodings(jacob_image)[0]
 
+# ADD CUSTOM FACES HERE
+# example_image = face_recognition.load_image_file("faces/Example.jpg")
+# example_encoding = face_recognition.face_encodings(example_image)[0]
+
 # List of all possible face encodings
 known_face_encodings = [ 
     jacob_encoding
+    # , example_encoding
 ]
 
 # List of all possible names (should be indexed the same as known_face_encodings)
 known_face_names = [
     "Jacob"
+    # , "Example"
 ]
 
 # Temp variables to store positions and names
